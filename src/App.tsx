@@ -1,10 +1,10 @@
-import {ChangeEvent,useState,FC} from 'react';
+import {ChangeEvent,useState} from 'react';
 import './App.css';
 
 
 function App() {
 
-  const [todoText,setTodoText] = useState("");
+  const [todoText,setTodoText] = useState<String>("");
   const [incompleteTodos,setIncompleteTodos] = useState<String[]>([]);
   const [completeTodos,setCompleteTodos] = useState<String[]>([]);
 
