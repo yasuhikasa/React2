@@ -50,7 +50,8 @@ function App() {
       <input placeholder="TODOを入力" value={todoText} onChange={onChangeTodoText} disabled={incompleteTodos.length >= 5}/>
       <button onClick={onClickAdd} disabled={incompleteTodos.length >= 5}>追加</button>
     </div>
-
+    <p>テスト</p>
+    
     {incompleteTodos.length >= 5 && (<p style={{color: "red"}}>登録できるのは５つまで</p>)}
 
      <div className="incomplete-area">
